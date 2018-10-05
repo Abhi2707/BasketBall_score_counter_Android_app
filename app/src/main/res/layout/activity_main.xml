@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g1"
+    tools:context="com.example.hp.score_counter.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="TeamA"
+                android:layout_gravity="left"
+                android:textColorHint="#412913"
+                android:textColor="#412913"
+                android:textSize="28dp"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/i9"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="right"
+                android:inputType="textPersonName"
+                android:hint ="TeamB"
+                android:textColorHint="#242b31"
+                android:textColor="#131e28"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFD700"
+                android:textSize="48dp" />
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textSize="48dp"
+                android:textAlignment="center"
+                android:textColor="#FF4500"
+                android:layout_weight="5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:onClick="inc_A_1"
+                android:text="+2 POINTS"
+                android:textSize="22sp"/>
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:onClick="inc_B_1"
+                android:text="+2 POINTS"
+                android:textSize="22sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:onClick="inc_A_3"
+                android:text="+3 POINTS"
+                android:textSize="22sp"/>
+
+
+
+
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:onClick="inc_B_3"
+                android:text="+3 POINTS"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:onClick="inc_A_throw"
+                android:text="FREE THROW"
+                android:textSize="22sp"/>
+
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:onClick="inc_B_throw"
+                android:text="FREE THROW"
+                android:textSize="22sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="10sp"
+                android:onClick="inc_A_d"
+                android:text="UN-DO-A"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="10sp"
+                android:onClick="inc_B_d"
+                android:text="UN-DO-B"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button"
+                style="@android:style/Widget.Holo.Button.Toggle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+
+                android:onClick="reset"
+                android:text="RESET"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:id="@+id/text16"
+            android:textColor="#ffffff"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:id="@+id/but1"
+                android:text="START"
+                android:onClick="onClickStart"
+                android:background="#000000"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="STOP"
+                android:id="@+id/but2"
+                android:onClick="onClickStop"
+                android:layout_marginLeft="10dp"
+                android:background="#000000"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="RESET"
+                android:onClick="onClickReset"
+                android:id="@+id/but3"
+                android:layout_marginLeft="10dp"
+                android:background="#000000"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
